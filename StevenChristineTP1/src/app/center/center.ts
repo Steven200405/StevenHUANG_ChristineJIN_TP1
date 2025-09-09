@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-center',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './center.scss'
 })
 export class Center {
-
+  @Output() color = new EventEmitter();
 }
