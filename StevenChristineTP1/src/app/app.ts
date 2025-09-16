@@ -11,7 +11,7 @@ import { NgClass } from '@angular/common';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('ent');
+  protected readonly title = signal('Steven & Christine TP1');
 
   public backgroundColor: string = "";
 
