@@ -1,16 +1,3 @@
-<table class="center">
-  <tbody>
-    <tr>
-      <td class="red" (click)="changeColor()">
-      </td>
-      <td class="green" (click)="changeColor()">
-      </td>
-    </tr>
-    <tr>
-      <td class="blue" (click)="changeColor()">
-      </td>
-      <td class="orange" (click)="changeColor()">
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="square">
+    <app-logo (clickColor)="onColorChange($event)"></app-logo>
+</div>

@@ -1,20 +1,22 @@
-import {Component, Output, signal} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Header } from "./header/header";
-import { Footer } from "./footer/footer";
+import { Component, signal } from '@angular/core';
+import { Header } from './header/header';
+import { Footer } from './footer/footer';
 import { Center } from './center/center';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Center],
+  imports: [NgClass, Header, Footer, Center],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('StevenChristineTP1');
+  protected readonly title = signal('ent');
 
-  public headerColor: string = "";
-  public changeColor(){
-    this.colorRed="blue";
+  public backgroundColor: string = "";
+
+  onColorChange(color: string): void {
+
+    this.backgroundColor = color;
   }
 }

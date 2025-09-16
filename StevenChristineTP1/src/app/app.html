@@ -1,8 +1,5 @@
-<html>
-  <head></head>
-  <body>
-    <app-header></app-header>
-    <app-center></app-center>
-    <app-footer></app-footer>
-  </body>
-</html>
+<app-header></app-header>
+  <div [ngClass]="backgroundColor">
+    <app-center (color)="onColorChange($event)" ></app-center>
+  </div>
+<app-footer></app-footer>

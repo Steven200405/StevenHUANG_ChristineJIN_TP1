@@ -1,27 +1,7 @@
-.center {
-  width: 400px;
-  height: 400px;
-  border: 1px solid black;
-  margin: auto;
-}
-
-td{
-  width: 200px;
-  height: 200px;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.orange {
-  background-color: orange;
+.square {
+    width: 400px;
+    height: 400px;
+    border: black 1px solid;
+    margin: auto;
+    margin-top: 100px;
 }
